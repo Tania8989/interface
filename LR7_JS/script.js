@@ -1,0 +1,23 @@
+const answers = ["Так", "Ні"];
+const container = document.createElement('div');
+container.className = 'input-container';
+const input = document.createElement('input');
+input.type = 'text';
+input.placeholder = 'Введіть запитання';
+const buttonn = document.createElement('button');
+buttonn.textContent = 'Запитати';
+const ball = document.createElement('div');
+ball.className = 'ball';
+const answer = document.createElement('div');
+answer.className = 'answer';
+answer.textContent = '';
+container.appendChild(input);
+container.appendChild(buttonn);
+ball.appendChild(answer);
+document.body.appendChild(container);
+document.body.appendChild(ball);
+buttonn.addEventListener('click', () =>{
+const question = input.value;
+const random = answers[Math.floor(Math.random() * answers.length)];
+answer.textContent = random;
+});
