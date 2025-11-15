@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#1A2980, #26D0CE);
+    min-height: 100vh;
+}
+.game {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding-top: 50px;
+}
+.player, .computer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    border-radius: 10px;
+}
+.name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+.score-box {
+    width: 80px;
+    background: #00AEEF;
+    padding: 8px 0;
+    font-size: 22px; 
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.number-circle {
+    width: 90px;
+    height: 90px;
+    background: #FFD82E;
+    border: 4px solid #CFAF29;
+    border-radius: 50%;
+    font-size: 38px; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0 auto;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.7);
+}
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.generate-btn, .reset-btn {
+    width: 140px; 
+    height: 55px;
+    border: 2px solid;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    transition: background 0.3s;
+}
+.generate-btn {
+    background: #3BBA2B;
+    border-color: #2B8F1F;
+}
+.generate-btn:hover {
+    background: #66BB6A;
+}
+.reset-btn {
+    background: #F44336;
+    border-color: #D32F2F;
+}
+.reset-btn:hover {
+    background: #E57373;
+}
+.win {
+    font-size: 28px; 
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+.game {
+	flex-direction: column;
+	gap: 30px;
+	padding-top: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.player, .computer {
+	width: 90%;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.name {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.score-box {
+    font-size: 20px;
+	width: 70px;
+}
+.number-circle {
+	width: 70px;
+	height: 70px;
+	font-size: 30px;
+    margin-top: 10px;
+}
+.button-group {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+	gap: 10px;
+	margin-top: 20px;
+}
+.generate-btn, .reset-btn {
+	width: 45%;
+    max-width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+.win {
+    font-size: 24px;
+    margin-top: 20px;
+	}
+}
